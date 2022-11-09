@@ -1,7 +1,8 @@
-<div>
-     <h1>Productos</h1>
+    <h1>Productos</h1>
+<div class="container-items">
+ 
     {{#each productos}}      
-		<div class="container-items">
+		<div >
 			<div class="item">
 				<figure>
 					<img width="100" src={{this.thumbnail}}/>
@@ -12,7 +13,6 @@
 					<button>Añadir al carrito</button>
 				</div>
 			</div>
-
 		</div>
 
     {{/each}}
