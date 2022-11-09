@@ -1,9 +1,8 @@
 [
   {
     "id": 1,
-    "title": "CRUZE RS",
-    "price": "4.994.900",
+    "title": "CHEVROLET CRUZE RS",
+    "price": "4.207.900",
     "thumbnail": "https://www.chevrolet.com.ar/content/dam/chevrolet/mercosur/argentina/espanol/index/cars/cars-subcontent/06-images/cruze-rs.png?imwidth=600"
   }
-  
 ]

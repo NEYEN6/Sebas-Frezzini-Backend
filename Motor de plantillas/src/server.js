@@ -55,22 +55,9 @@ app.get('/users', (req, res) => {
     })
 })
 
-let pokemones = [
-    { name: "pikachu", edad: 23 },
-    { name: "charizard", edad: 25 },
-    { name: "miau", edad: 33 },
-    { name: "Andres", edad: 19 },
-]
-
-app.get('/people', (req, res) => {
-    res.render('usuarios', {
-        people: pokemones
-    })
-})
 
 app.post("/products", async(req, res) => {
-    //obtengo la info del formulario, y la guardo en una variable
     const newProduct = req.body;
     await productsService.save(newProduct);
-    res.redirect("/");
+    res.redirect("/productos");
 })
