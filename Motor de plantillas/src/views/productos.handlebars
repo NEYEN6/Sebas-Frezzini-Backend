@@ -1,10 +1,19 @@
 <div>
-    <h2>Pagina de productos</h2>
-    {{#each productos}}
-        <div>
-            <p>{{this.title}}</p>
-            <p>{{this.price}}</p>
-            <img width="100" src={{this.thumbnail}}/>
-        </div>
+     <h1>Productos</h1>
+    {{#each productos}}      
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img width="100" src={{this.thumbnail}}/>
+				</figure>
+				<div class="info-product">
+					<p>{{this.title}}</p>
+					<p>${{this.price}}</p>
+					<button>Añadir al carrito</button>
+				</div>
+			</div>
+
+		</div>
+
     {{/each}}
 </div>

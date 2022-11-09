@@ -1,12 +1,13 @@
 <div class="contenedor">
-    <h2>Pagina home</h2>
-    <form method="post" action="/products">
-        <label>Titulo</label>
-        <input name="title"/>
+
+    <form method="post" action="/products" class="form-register">
+       <h4>Agregar Producto</h4>
+        <label>Producto</label>
+        <input name="title" class="controls" placeholder="Ingrese su Producto"/>
         <label>Precio</label>
-        <input name="price"/>
+        <input name="price" class="controls"placeholder="Ingrese el Precio"/>
         <label>Imagen</label>
-        <input name="thumbnail"/>
-        <button type="submit">Guardar</button>
+        <input name="thumbnail" class="controls"placeholder="Ingrese la Imagen"/>
+        <button type="submit" class="botons">Cargar Producto</button>
     </form>
 </div>

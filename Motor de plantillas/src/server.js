@@ -44,16 +44,14 @@ app.get("/contact", (req, res) => {
 })
 
 let usuarios = [
-    { name: "pedro", edad: 23 },
-    { name: "pablo", edad: 25 },
-    { name: "Maria", edad: 33 },
-    { name: "Andres", edad: 19 },
+    { name: "Sebastian", apellido: "Frezzini", edad: 19 },
+
 ]
 
 app.get('/users', (req, res) => {
     res.render('usuarios', {
         people: usuarios,
-        email: "fredy@gmail.com"
+        email: "sebasfrezzini@gmial.com"
     })
 })
 
